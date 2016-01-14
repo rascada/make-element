@@ -15,8 +15,8 @@ let h1 = makeEl('h1', {
 ```javascript
 // make-el
 
-['hello ', 'make', '-', 'el']
-  .map(word => word.toUpperCase())
+['heLlo ', 'mAke', '-', 'eL!']
+  .map(word => word.toLowerCase())
   .forEach(word => makeEl('span', {
     innerText: word,
     id: `word_is_${word}`,
@@ -25,8 +25,8 @@ let h1 = makeEl('h1', {
 
 // native
 
-['hello ', 'make', '-', 'el']
-  .map(word => word.toUpperCase())
+['heLlo ', 'mAke', '-', 'eL!']
+  .map(word => word.toLowerCase())
   .forEach(word => {
     let span = document.createElement('span');
 
