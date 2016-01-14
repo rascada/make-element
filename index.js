@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = function make$(type) {
+module.exports = function make$(type, options) {
   let element$ = document.createElement(type);
 
-  return element$;
+  return Object.assign(element$, options);
 };
