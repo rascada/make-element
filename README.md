@@ -7,7 +7,6 @@ const makeEl = require('make-el');
 let h1 = makeEl('h1', {
   id: 'hello',
   innerText: 'hello make-el',
+  appendTo: document.body,
 });
-
-document.body.appendChild(h1);
 ```
