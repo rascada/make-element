@@ -6,7 +6,7 @@ const makeEl = require('make-el');
 
 let h1 = makeEl('h1', {
   id: 'hello',
-  innerText: 'hello make-el',
+  textContent: 'hello make-el',
   appendTo: document.body,
 });
 ```
@@ -18,7 +18,7 @@ let h1 = makeEl('h1', {
 ['heLlo ', 'mAke', '-', 'eL!']
   .map(word => word.toLowerCase())
   .forEach(word => makeEl('span', {
-    innerText: word,
+    textContent: word,
     id: `word_is_${word}`,
     appendTo: document.body,
   }));
@@ -30,7 +30,7 @@ let h1 = makeEl('h1', {
   .forEach(word => {
     let span = document.createElement('span');
 
-    span.innerText = word;
+    span.textContent = word;
     span.id = `word_is_${word}`;
     document.body.appendChild(span);    
   });
